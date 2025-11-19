@@ -7,21 +7,21 @@
   <img src="raindrop_animation_demo.gif" alt="Longitudinal biomarker trajectories" width="450">
 </p>
 
-> Interactive Shiny applications for visualizing longitudinal Alzheimer's disease biomarker trajectories from ADNI and related cohorts, supporting head-to-head comparisons across multiple assay platforms.
+> Interactive Shiny applications for visualizing longitudinal Alzheimer's disease biomarker trajectories from ADNI supporting head-to-head comparisons across multiple assay platforms.
 
 ---
 
 ## Overview
 
-This repository contains three complementary Shiny applications for exploring plasma and imaging biomarker trajectories in Alzheimer's disease research. The applications use ADNI data to create dynamic visualizations showing how biomarkers change over time, stratified by disease stage groups. All three apps support **21 different biomarker variables** across multiple platforms including C2N PrecivityAD2, Fujirebio Lumipulse, ALZpath Quanterix, Janssen LucentAD, Roche NeuroToolKit, and Quanterix Simoa assays, as well as amyloid PET, tau PET, structural MRI, and CSF measures.
+This repository contains three Shiny applications for exploring plasma and imaging biomarker trajectories in Alzheimer's disease research. The applications use ADNI data to create dynamic visualizations showing how biomarkers change over time. All three Siny apps support different biomarker variables across multiple platforms including C2N Precivity, Fujirebio Lumipulse, ALZpath Quanterix, Janssen LucentAD, Roche NeuroToolKit, and Quanterix Simoa assays, as well as amyloid PET, tau PET, structural MRI, and CSF measures.
 
-The visualization tools enable researchers to explore longitudinal patterns, compare different biomarker modalities, and understand disease progression dynamics across the Alzheimer's disease continuum.
+The visualization tools enable researchers to explore longitudinal patterns and compare different biomarker modalities.
 
 ## Interactive Tools
 
 🔗 **[Raindrop Viewer](https://amyloid.shinyapps.io/raindrop/)** - Explore biomarker trajectories aligned by baseline rank
 
-🔗 **[Time Trails Viewer](https://amyloid.shinyapps.io/timetrails/)** - Visualize dual-biomarker progression paths with directional arrows
+🔗 **[Time Trails Viewer](https://amyloid.shinyapps.io/timetrails/)** - Visualize simultaneous biomarker trajectories with directional arrows
 
 🎬 **[Movie Generator](https://amyloid.shinyapps.io/movie/)** - Generate MP4 videos of animated biomarker trajectories
 
@@ -35,7 +35,7 @@ git clone https://github.com/WashUFluidBiomarkers/adni_visualization_tools.git
 
 ### Raindrop Viewer (`Raindrop/`)
 
-Interactive visualization showing longitudinal biomarker trajectories aligned by baseline rank order. Participants are arranged on the x-axis by their baseline biomarker value, with longitudinal changes displayed as "raindrops" falling over time.
+Interactive visualization showing longitudinal biomarker trajectories aligned by baseline rank order. Participants are arranged on the x-axis by their baseline biomarker value, with longitudinal changes displayed as "raindrops" rising or falling over time.
 
 **Key Features:**
 - Baseline rank-ordered participant display
@@ -43,12 +43,12 @@ Interactive visualization showing longitudinal biomarker trajectories aligned by
 - Color-coded disease stage stratification (5-level grouping)
 - Customizable threshold lines for clinical cutoffs
 - Optional baseline value indicators
-- Support for 21 biomarker variables
+- Support for 21 variables
 - MP4 video export functionality
 
 ### Time Trails Viewer (`TimeTrails/`)
 
-Interactive dual-axis trajectory viewer showing simultaneous longitudinal changes in two biomarkers with directional arrows indicating disease progression over time.
+Interactive trajectory viewer showing simultaneous longitudinal changes in two biomarkers with directional arrows indicating disease progression over time.
 
 **Key Features:**
 - Simultaneous X-Y plotting of any two biomarkers
@@ -56,26 +56,22 @@ Interactive dual-axis trajectory viewer showing simultaneous longitudinal change
 - Time slider with smooth animation controls (0-10 years)
 - Play/pause functionality
 - Color-coded by baseline or longitudinal grouping
-- Cached plotting for improved performance
-- Integrated help documentation
-- Link to MP4 video generation
+- MP4 video export functionality
 
 ### Movie Generator (`Movie/`)
 
-Headless application for automated MP4 video generation, triggered via URL parameters from the interactive viewers. Generates high-quality videos at 1250×750 pixels (100 DPI) at 5 frames per second.
+Application for automated MP4 video generation, triggered via URL parameters from the interactive viewers. Generates high-quality videos at 1250×750 pixels.
 
 **Key Features:**
 - URL parameter-driven configuration
 - Automatic download trigger on page load
 - Supports both raindrop and time trail formats
-- Progress notifications during rendering
-- No visible UI - purely functional endpoint
 
 ## Key Components
 
 ### Supported Biomarkers
 
-The applications support **21 different biomarker variables** organized into three categories:
+The applications support **21 different variables** organized into three categories:
 
 **Plasma Biomarkers (15):**
 - **C2N PrecivityAD2**: plasma %p-tau217 (ratio), p-tau217 (pg/mL), Aβ42/Aβ40
@@ -109,7 +105,7 @@ Each application folder contains a `Needed_Functions.R` file with core utility f
 - **`create_raindrop_plot_movie()`** - Video rendering function for raindrop animations
 - **`create_timepath_plot_video()`** - Video rendering function for time trail animations
 
-**Note:** The three `Needed_Functions.R` files differ slightly (30,439-31,986 characters) due to app-specific optimizations and function variants.
+**Note:** The three `Needed_Functions.R` files differ slightly due to app-specific variants.
 
 ## Technical Details
 
@@ -148,14 +144,6 @@ Each application folder contains a `Needed_Functions.R` file with core utility f
 **Core Variables:**
 - `RID` - Participant ID
 - `time` - Years since baseline (0-10)
-
-### Performance Optimizations
-
-- Session-level plot caching with `renderCachedPlot()` (200 MB memory limit)
-- Pre-computed variable lookup tables
-- Reactive programming to minimize redundant calculations
-- Rasterized plotting layers for large datasets
-- High-performance `ragg` graphics device
 
 ## Usage
 
