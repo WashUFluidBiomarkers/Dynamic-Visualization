@@ -173,7 +173,7 @@ shiny::runApp("Movie/")
 
 ## References
 
-**Schindler SE**, Petersen KK, Saef B, Tosun D, Shaw LM, Zetterberg H, Dage JL, Ferber K, Triana-Baltzer G, Du-Cuny L, Li Y, Coomaraswamy J, Baratta M, Mordashova Y, Saad ZS, Raunig DL, Ashton NJ, Meyers EA, Rubel CE, Rosenbaugh EG, Bannon AW, Potter WZ; Alzheimer's Disease Neuroimaging Initiative (ADNI) Foundation for the National Institutes of Health (FNIH) Biomarkers Consortium Plasma Aβ and Phosphorylated Tau as Predictors of Amyloid and Tau Positivity in Alzheimer's Disease Project Team. **Head-to-head comparison of leading blood tests for Alzheimer's disease pathology.** *Alzheimers Dement*. 2024 Nov;20(11):8074-8096. doi: 10.1002/alz.14321
+Schindler SE, Petersen KK, Saef B, Tosun D, Shaw LM, Zetterberg H, Dage JL, Ferber K, Triana-Baltzer G, Du-Cuny L, Li Y, Coomaraswamy J, Baratta M, Mordashova Y, Saad ZS, Raunig DL, Ashton NJ, Meyers EA, Rubel CE, Rosenbaugh EG, Bannon AW, Potter WZ; Alzheimer's Disease Neuroimaging Initiative (ADNI) Foundation for the National Institutes of Health (FNIH) Biomarkers Consortium Plasma Aβ and Phosphorylated Tau as Predictors of Amyloid and Tau Positivity in Alzheimer's Disease Project Team. **Head-to-head comparison of leading blood tests for Alzheimer's disease pathology.** *Alzheimers Dement*. 2024 Nov;20(11):8074-8096. doi: 10.1002/alz.14321
 
 ---
 
