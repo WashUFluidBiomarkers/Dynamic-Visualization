@@ -19,11 +19,11 @@ The visualization tools enable researchers to explore longitudinal patterns and 
 
 ## Interactive Tools
 
-🔗 **[Raindrop Viewer](https://amyloid.shinyapps.io/raindrop/)** - Explore biomarker trajectories aligned by baseline rank
+🔗 **[Raindrop Viewer](https://amyloid.shinyapps.io/ADNI_Raindrop_Plots/)** - Explore biomarker trajectories aligned by baseline rank
 
-🔗 **[Time Trails Viewer](https://amyloid.shinyapps.io/timetrails/)** - Visualize simultaneous biomarker trajectories with directional arrows
+🔗 **[Time Trails Viewer](https://amyloid.shinyapps.io/ADNI_Time_Trails/)** - Visualize simultaneous biomarker trajectories with directional arrows
 
-🎬 **[Movie Generator](https://amyloid.shinyapps.io/movie/)** - Generate MP4 videos of animated biomarker trajectories
+🎬 **[Movie Generator](https://amyloid.shinyapps.io/ADNI_Movie_Out/)** - Generate MP4 videos of animated biomarker trajectories
 
 ## Clone this repository
 
