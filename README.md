@@ -161,6 +161,8 @@ shiny::runApp("Movie/")
 
 ## References
 
+Saef B, Petersen KK, Volluz K, Li Y, Tosun D, Mila-Aloma M, Shaw LM, Zetterberg H, Dage JL, Rubel CE, Ferber K, Du-Cuny L, Coomaraswamy J, Baratta M, Mordashova Y, Saad ZS, Triana-Baltzer G, Ashton NJ, Meyers EA, Rosenbaugh EG, Sabandal JM, Bannon AW, Potter WZ; Alzheimer's Disease Neuroimaging Initiative (ADNI); Foundation for the National Institutes of Health (FNIH) Biomarkers Consortium Plasma Aβ and Phosphorylated Tau as Predictors of Amyloid and Tau Positivity in Alzheimer's Disease Project Team; Schindler SE. **Exploring longitudinal relationships among Alzheimer's disease biomarkers.** *Alzheimers Dement*. 2026 Aug;22(8):e71711. PMID: 42535261.
+
 Schindler SE, Petersen KK, Saef B, Tosun D, Shaw LM, Zetterberg H, Dage JL, Ferber K, Triana-Baltzer G, Du-Cuny L, Li Y, Coomaraswamy J, Baratta M, Mordashova Y, Saad ZS, Raunig DL, Ashton NJ, Meyers EA, Rubel CE, Rosenbaugh EG, Bannon AW, Potter WZ; Alzheimer's Disease Neuroimaging Initiative (ADNI) Foundation for the National Institutes of Health (FNIH) Biomarkers Consortium Plasma Aβ and Phosphorylated Tau as Predictors of Amyloid and Tau Positivity in Alzheimer's Disease Project Team. **Head-to-head comparison of leading blood tests for Alzheimer's disease pathology.** *Alzheimers Dement*. 2024 Nov;20(11):8074-8096. doi: 10.1002/alz.14321
 
 ---
